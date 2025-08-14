@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .small {
+    font-size: 0.7rem;
+    color: teal;
+}
+header nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+header nav a.btn {
+    background: teal;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: #fff;
+}
+
+/* Hero */
+#hero {
+    background: linear-gradient(to right, #00b894, #00cec9);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+#hero .tagline {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+#hero h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.btn-light, .btn-outline {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.btn-light { background: white; color: #00b894; }
+.btn-outline { border: 2px solid white; color: white; }
+
+/* Content Sections */
+.content-section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+.bg-light { background: #f9f9f9; }
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 1.5rem;
+}
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.card:hover { transform: translateY(-5px); }
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+}
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.gallery-grid img:hover { transform: scale(1.05); }
+
+/* Join */
+.join-section {
+    background: linear-gradient(to right, #00b894, #00cec9);
+    color: white;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+}
+.join-section form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #333;
+}
+.join-section form input, .join-section form textarea, .join-section form button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.join-section form button {
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.join-section form button:hover { background: #008080; }
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #222;
+    color: #bbb;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
