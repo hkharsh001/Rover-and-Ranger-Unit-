@@ -1,120 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rover & Ranger Unit – NSCBM Govt. College Hamirpur</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rover & Ranger Unit — NSCBM Govt. College Hamirpur</title>
+  <meta name="description" content="Rover & Ranger Unit at NSCBM Govt. College Hamirpur (H.P.) — youth-led service, leadership, and adventure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Homepage">
+      <img src="images/logo.png" alt="Rover & Ranger Unit Logo" class="brand-logo">
+      <div class="brand-text">
+        <span class="brand-top">THE BHARAT SCOUTS & GUIDES</span>
+        <strong>Rover & Ranger Unit — NSCBM Govt. College Hamirpur</strong>
+      </div>
+    </a>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Unit Logo">
-            <div class="brand-text">
-                <span class="small">THE BHARAT SCOUTS & GUIDES</span>
-                <h1>Rover & Ranger Unit — NSCBM Govt. College Hamirpur</h1>
-            </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+
+      <!-- External Links Dropdown -->
+      <div class="dropdown">
+        <button class="drop-btn" aria-haspopup="true" aria-expanded="false">External Links ▾</button>
+        <div class="drop-menu" role="menu">
+          <a href="https://www.scout.org/" target="_blank" rel="noopener">World Scouting</a>
+          <a href="https://www.wagggs.org/" target="_blank" rel="noopener">WAGGGS</a>
+          <a href="https://www.bsgindia.org/" target="_blank" rel="noopener">BSG India</a>
+          <a href="https://www.bsgindia.org/page/himachal-pradesh" target="_blank" rel="noopener">BSG Himachal Pradesh</a>
+          <a href="https://www.gchamirpur.org/" target="_blank" rel="noopener">Our College Site</a>
         </div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#initiatives">Initiatives</a>
-            <a href="#events">Events</a>
-            <a href="#news">News</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#join" class="btn">Join</a>
-        </nav>
-    </header>
+      </div>
 
-    <!-- Hero -->
-    <section id="hero">
-        <div class="hero-text">
-            <p class="tagline">Scouting for Life • Service • Adventure</p>
-            <h2>Shape the Future with Rover & Ranger</h2>
-            <p>Building leadership, service, and outdoor skills for youth in Hamirpur.</p>
-            <div class="hero-buttons">
-                <a href="#join" class="btn-light">Join the Unit</a>
-                <a href="#events" class="btn-outline">See Events</a>
-            </div>
+      <a class="btn btn-primary" href="#join">Join</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <img class="hero-img" src="images/hero.jpg" alt="Rovers and Rangers outdoors">
+    <div class="hero-content">
+      <p class="eyebrow">Scouting for Life • Service • Adventure</p>
+      <h1>Shape the Future with Rover & Ranger</h1>
+      <p class="sub">Youth-led service, leadership and outdoor skills at NSCBM Govt. College Hamirpur (H.P.).</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#join">Join the Unit</a>
+        <a class="btn btn-outline" href="#gallery">See Photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section fade-in">
+    <div class="container grid-2">
+      <div>
+        <h2>About the Unit</h2>
+        <p>We follow the ethos of The Bharat Scouts & Guides and the global Scouting movement. Our programme blends service, skills, and adventure for students aged 17–25.</p>
+        <ul class="checklist">
+          <li>Inclusive, youth-led governance</li>
+          <li>Outdoor programme: camps, treks, pioneering</li>
+          <li>Community service & climate action</li>
+          <li>Personal development & awards pathway</li>
+        </ul>
+        <p class="small">College website: <a href="https://www.gchamirpur.org/" target="_blank" rel="noopener">gchamirpur.org</a></p>
+      </div>
+      <div>
+        <img class="rounded shadow" src="images/about.jpg" alt="About our unit">
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities -->
+  <section id="activities" class="section section-alt fade-in">
+    <div class="container">
+      <h2>What We Do</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🧭</div>
+          <h3>Leadership</h3>
+          <p>Plan, lead, and evaluate youth-shaped projects.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🌿</div>
+          <h3>Environment</h3>
+          <p>Clean-ups, tree plantation, and climate action.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🤝</div>
+          <h3>Service</h3>
+          <p>Community drives and relief support.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🎒</div>
+          <h3>Adventure</h3>
+          <p>Treks, camps, first-aid, and outdoor skills.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery (Slider + Lightbox) -->
+  <section id="gallery" class="section fade-in">
+    <div class="container">
+      <h2>Gallery</h2>
+
+      <div class="slider" data-autoplay="true" data-interval="4200">
+        <button class="slide-btn prev" aria-label="Previous slide">‹</button>
+        <div class="slides">
+          <!-- Replace images as needed -->
+          <div class="slide"><img src="images/gallery1.jpg" alt="Activity 1"></div>
+          <div class="slide"><img src="images/gallery2.jpg" alt="Activity 2"></div>
+          <div class="slide"><img src="images/gallery3.jpg" alt="Activity 3"></div>
+          <div class="slide"><img src="images/gallery4.jpg" alt="Activity 4"></div>
         </div>
-    </section>
+        <button class="slide-btn next" aria-label="Next slide">›</button>
+      </div>
 
-    <!-- About -->
-    <section id="about" class="content-section">
-        <div class="text">
-            <h3>About the Unit</h3>
-            <p>Founded to nurture leadership and citizenship, our Rover & Ranger Unit follows the ethos of The Bharat Scouts & Guides and the global Scouting movement. We deliver a balanced programme of service, skills, and adventure for students aged 17–25.</p>
-            <ul>
-                <li>Inclusive, youth-led governance</li>
-                <li>Outdoor programme: camps, treks, pioneering</li>
-                <li>Community service & climate action</li>
-                <li>Personal development & awards pathway</li>
-            </ul>
-        </div>
-        <div class="image">
-            <img src="images/about.jpg" alt="About Rovers and Rangers">
-        </div>
-    </section>
+      <!-- Lightbox grid -->
+      <div class="gallery-grid">
+        <img src="images/gallery1.jpg" alt="Gallery 1" data-lightbox>
+        <img src="images/gallery2.jpg" alt="Gallery 2" data-lightbox>
+        <img src="images/gallery3.jpg" alt="Gallery 3" data-lightbox>
+        <img src="images/gallery4.jpg" alt="Gallery 4" data-lightbox>
+        <img src="images/gallery5.jpg" alt="Gallery 5" data-lightbox>
+        <img src="images/gallery6.jpg" alt="Gallery 6" data-lightbox>
+      </div>
+    </div>
+  </section>
 
-    <!-- Initiatives -->
-    <section id="initiatives" class="content-section bg-light">
-        <h3>Our Focus Areas</h3>
-        <div class="card-grid">
-            <div class="card">🧭 <h4>Leadership</h4><p>Life skills and confidence through youth-led activities.</p></div>
-            <div class="card">🌿 <h4>Environment</h4><p>Climate action, clean-ups, and nature education.</p></div>
-            <div class="card">🤝 <h4>Service</h4><p>Community service and relief support.</p></div>
-            <div class="card">🎒 <h4>Adventure</h4><p>Camps, treks, and outdoor challenges.</p></div>
-        </div>
-    </section>
+  <!-- Join -->
+  <section id="join" class="section section-accent fade-in">
+    <div class="container grid-2">
+      <div>
+        <h2>Become a Rover or Ranger</h2>
+        <p>Open to all enrolled students of NSCBM Govt. College Hamirpur (H.P.). Learn by doing, serve the community, and discover your leadership.</p>
+        <ul class="list">
+          <li>Eligibility: 17–25 years</li>
+          <li>Weekly meets & monthly outdoor</li>
+          <li>Pathway to awards & recognition</li>
+        </ul>
+      </div>
 
-    <!-- Events -->
-    <section id="events" class="content-section">
-        <h3>Upcoming Events</h3>
-        <div class="card-grid" id="event-list">
-            <!-- JS will inject events -->
-        </div>
-    </section>
+      <form id="contactForm" class="card form">
+        <label>
+          <span>Full Name</span>
+          <input type="text" name="name" required autocomplete="name" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label>
+          <span>Phone</span>
+          <input type="tel" name="phone" required autocomplete="tel" />
+        </label>
+        <label>
+          <span>Why do you want to join?</span>
+          <textarea name="message" rows="3" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Submit Interest</button>
+        <p class="tiny">Submitting opens your email app with details pre-filled.</p>
+      </form>
+    </div>
+  </section>
 
-    <!-- News -->
-    <section id="news" class="content-section bg-light">
-        <h3>Latest News</h3>
-        <div class="card-grid" id="news-list">
-            <!-- JS will inject news -->
-        </div>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-cards">
+        <a class="card link" href="mailto:rrunit@nscbm.edu.in">📧 rrunit@nscbm.edu.in</a>
+        <a class="card link" href="tel:+9198XXXXXX00">📞 +91 98XXXXXX00</a>
+        <a class="card link" target="_blank" rel="noopener" href="https://www.gchamirpur.org/">🌐 College Website</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="content-section">
-        <h3>Gallery</h3>
-        <div class="gallery-grid">
-            <!-- JS will inject gallery -->
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rover & Ranger Unit — NSCBM Govt. College Hamirpur (H.P.).</p>
+      <p class="muted">Affiliated to The Bharat Scouts & Guides, Himachal Pradesh.</p>
+    </div>
+  </footer>
 
-    <!-- Join -->
-    <section id="join" class="join-section">
-        <div class="join-text">
-            <h3>Become a Rover or Ranger</h3>
-            <p>Open to all enrolled students of NSCBM Govt. College Hamirpur (H.P.). Learn by doing, serve the community, and discover your leadership.</p>
-        </div>
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Phone" required>
-            <textarea placeholder="Why do you want to join?" required></textarea>
-            <button type="submit">Submit Interest</button>
-        </form>
-    </section>
+  <!-- Lightbox modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <img class="lightbox-img" alt="">
+  </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Rover & Ranger Unit — NSCBM Govt. College Hamirpur. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
-</html>
+    </html>
